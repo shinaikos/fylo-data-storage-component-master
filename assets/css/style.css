@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(243, 100%, 93%);
+    color: hsl(229, 7%, 55%);
+    color: hsl(228, 56%, 26%);
+    color: hsl(229, 57%, 11%)
+}
+
+body {
+    background-image: url(../../images/bg-mobile.png);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    height: 670px;
+}
+
+/* classes padroes */
+
+.container {
+    display: flex;
+    width: 90%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Upload */
+
+.upload {
+    background-color: hsl(228, 56%, 26%);
+    min-width: 300px;
+    max-width: 320px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 8px;
+    border-top-right-radius: 90px;
+}
+
+.icons-group {
+    padding-top: 40px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.info {
+    height: 160px;
+    background-color: hsl(228, 56%, 26%);
+    min-width: 300px;
+    max-width: 320px;
+    margin-top: 16px;
+    border-radius: 8px;
+    margin-bottom: 140px;
+}
+
+.info p, strong, .tamanho {
+    color: hsl(243, 100%, 93%);
+}
+.info p {
+}
+
+.bar {
+    width: 260px;
+    height: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px hsl(229, 7%, 55%); 
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.bar-full{
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    display: flex;
+    border-radius: 8px;
+    justify-content: flex-end;
+}
+.ball{
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.tamanho{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+.storage{
+    height: 0px;
+}
+
+.gambiarra{
+    height: 72px;
+    background-color:  hsl(243, 100%, 93%);
+    width: 180px;
+    border-radius: 8px;
+    position: relative;
+    bottom: -60px;
+    box-shadow: 0px 0px 4px hsl(229, 7%, 55%) ;
+
+}
+.number{
+    font-size: 38px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+/*
+@media only screen and ( min-width:400px){
+    body{
+        flex-direction: row;
+        background-image: url(../../images/bg-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}*/
