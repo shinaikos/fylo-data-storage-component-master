@@ -69,63 +69,95 @@ body {
 .info p, strong, .tamanho {
     color: hsl(243, 100%, 93%);
 }
-.info p {
-}
 
 .bar {
     width: 260px;
     height: 16px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 0px 8px hsl(229, 7%, 55%); 
+    box-shadow: 0px 0px 8px hsl(229, 7%, 55%);
     margin-top: 18px;
     margin-bottom: 18px;
 }
 
-.bar-full{
+.bar-full {
     width: 70%;
     height: 100%;
-    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     display: flex;
     border-radius: 8px;
     justify-content: flex-end;
 }
-.ball{
+
+.ball {
     height: 16px;
     width: 16px;
     background-color: #fff;
     border-radius: 50%;
 }
-.tamanho{
+
+.tamanho {
     width: 260px;
     display: flex;
     justify-content: space-between;
 }
-.storage{
+
+.storage {
     height: 0px;
 }
 
-.gambiarra{
+.gambiarra {
     height: 72px;
-    background-color:  hsl(243, 100%, 93%);
+    background-color: hsl(243, 100%, 93%);
     width: 180px;
     border-radius: 8px;
     position: relative;
     bottom: -60px;
-    box-shadow: 0px 0px 4px hsl(229, 7%, 55%) ;
-
+    box-shadow: 0px 0px 4px hsl(229, 7%, 55%);
 }
-.number{
+
+.number {
     font-size: 38px;
     font-weight: 700;
     margin-right: 10px;
 }
-/*
-@media only screen and ( min-width:400px){
-    body{
-        flex-direction: row;
+
+@media only screen and ( min-width:768px) {
+    body {
         background-image: url(../../images/bg-desktop.png);
-        background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: 271px;
+        background-color: hsl(229, 57%, 11%);
     }
-}*/
+    #principal {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .gambiarra {
+        top: -135px;
+        right: -141px;
+    }
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 25px solid hsl(243, 100%, 93%);
+        position: relative;
+        right: -139px;
+        bottom: -35px;
+    }
+    .info {
+        margin-left: 16px;
+        max-width: 380px;
+        min-width: 379px;
+    }
+    .info {
+        align-items: flex-start;
+        padding-left: 24px;
+    }
+    .bar, .tamanho {
+        width: 320px;
+    }
+}
